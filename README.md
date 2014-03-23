@@ -15,7 +15,7 @@ cells.
 
 To create an **ipynb** just type:
 
-    ./md2ipynb myfile.md myfile.ipynb
+    ./md2ipynb --out myfile.ipynb myfile.md
 
 
 
