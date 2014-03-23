@@ -9,7 +9,6 @@ Note: Only toplevel python code is put in a code cell.
       '~~~'
 """
 import json
-import pprint
 import re
 
 
