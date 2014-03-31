@@ -82,7 +82,7 @@ class IPyNB(object):
             if segment.startswith('~~~ {.python}') and segment.endswith('~~~'):
                 newcell = NBCodeCell().load(segment[13:-3].strip())
             else:
-                newcell = NBMarkdownCell().load(segment)
+                newcell = NBMarkdownCell().load(segment.strip('\n'))
             self.base.addcell(newcell)
 
     def write(self, outfile):
